@@ -1,0 +1,376 @@
+/*------------FONT IMPORT-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*------------ROOT ELEMENTS-----------------*/
+:root {
+/*----------Font Families-------------*/
+--ff-primary: "Pixelify Sans", san serrif;
+--ff-secondary: "Roboto", sans serrif;
+/*----------Font Size-------------*/
+--fs-xsmall: 14px;
+--fs-small: 16px;
+--fs-medium: 24px;
+--fs-large: 36px;
+--fs-xlarge: 70px;
+/*----------Colors-------------*/
+--hard-clr: #000000;
+--soft-clr: #52057B;
+--accent-clr: #892CDC;
+--light-clr: #F1F1F1;
+}
+
+html,
+body {
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-xlarge);
+    color: var(--light-clr);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-large);
+    color: var(--light-clr);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-medium);
+    color: var(--light-clr);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-small);
+    color: var(--light-clr);
+}
+
+a {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-small);
+    text-decoration: none;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent-clr);
+}
+/*------------------BACKGROUND--------------------*/
+.backgroundimg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100dvh;
+    width: 100dvw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    border: none;
+}
+
+.xbox {
+    background-image: url(/css/assets/xboxs.jpg);
+}
+.playstation {
+    background-image: url(/css/assets/ps-controller.jpg);
+}
+.nintendo {
+    background-image: url(/css/assets/gameboy1.jpg);
+}
+.vr {
+    background-image: url(/css/assets/xboxs.jpg);
+}
+.computer {
+    background-image: url(/css/assets/gpc.jpg);
+}
+/*------------------NAVBAR--------------------*/
+.navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+ }
+ 
+ .logo {
+     font-size: var(--fs-large);
+     text-align: center;
+     color: var(--light-clr);
+     transition: .3s ease-in-out;
+ }
+ 
+ .logo:hover {
+     color: var(--accent-clr);
+ }
+ 
+ .nav-selection {
+     display: flex;
+     gap: 2rem;
+     align-items: center;
+ }
+ 
+ .nav-item {
+     color: var(--light-clr);
+     transition: .3s ease-in-out;
+ }
+ 
+ .nav-item:hover {
+     color: var(--accent-clr);
+     transform: scale(1.5, 1.5);
+ }
+ 
+ /* Mobile menu button style */
+ .menubtn {
+     height: 2rem;
+     width: 4rem;
+     font-family: var(--ff-primary);
+     background-color: var(--accent-clr);
+     color: var(--light-clr);
+     transition: .3s ease-in-out;
+     display: none;
+ }
+ 
+ .menubtn:hover {
+     background-color: var(--soft-clr);
+ }
+
+/*------------------MASTHEAD--------------------*/
+.masthead-content {
+    height: 60dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masthead-h1 {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 100px;
+    border-radius: 12px;
+    border: solid 4px var(--accent-clr);
+}
+
+/*------------------SHOP SECTION--------------------*/
+
+.shop-section {
+    height: auto;
+    
+    padding: 2rem 0;
+    margin: 0;
+    background-color: var(--soft-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    gap: 2rem;
+}
+
+.product-img {
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px var(--hard-clr);
+}
+
+.product-options {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-info {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--accent-clr);
+    border: solid 3px var(--hard-clr);
+}
+
+.addcart {
+    background-color: var(--hard-clr);
+    color: var(--light-clr);
+    transition: .3s ease-in-out;
+} 
+
+.addcart:hover {
+    background-color: var(--light-clr);
+    color: var(--accent-clr);
+    border: solid 2px var(--soft-clr);
+}
+
+
+
+
+
+/*--------------------CONSOLE-------------------------*/
+
+/*XBOX*/
+.xbox1{
+    background-image: url(/css/assets/xbox/blackxbconsole.jpg);
+}
+
+.xbox2 {
+    background-image: url(/css/assets/xbox/blackxbconsole0.jpg);
+}
+
+.xbox3 {
+    background-image: url(/css/assets/xbox/whitexbconsole.jpg);
+}
+
+/*PLAYSTATION*/
+
+.ps1 {
+    background-image: url(/css/assets/);
+}
+
+.ps2 {
+    background-image: url(/css/assets/);
+}
+
+.ps3 {
+    background-image: url(/css/assets/);
+}
+
+/*NINTENDO*/
+
+.nin1 {
+
+}
+
+.nin2 {
+
+}
+
+.nin3 {
+    
+}
+
+
+
+/*--------------------CONTROLLER-------------------------*/
+
+.control1 {
+    background-image: url(/css/assets/xbox/blackxbcontroller.jpg);
+}
+
+.control2 {
+    background-image: url(/css/assets/xbox/bluexbcontroller.jpg);
+}
+
+.control3 {
+    background-image: url(/css/assets/xbox/bwxbcontroller.jpg);
+}
+
+
+/*--------------------ACCESSORIES-------------------------*/
+
+.access1 {
+    background-image: url(/css/assets/xbox/chargingdock.jpg);
+}
+
+.access2 {
+    background-image: url(/css/assets/xbox/adaptivecontroller.jpg);
+}
+
+.access3 {
+    background-image: url(/css/assets/xbox/xbwrap.jpg);
+}
+
+/*--------------------FOOTER-------------------------*/
+
+.footer {
+    background-color: var(--soft-clr);
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+}
+
+.copy {
+    text-align: center;
+    margin: 0;
+    
+}
+
+
+
+@media (max-width: 400px) {
+    /*-------------NAVBAR-------------*/
+    .menubtn {
+        display: block;
+    }
+
+    .nav-selection {
+        position:absolute;
+        top: 4.5rem;
+        height: auto;
+        right: -100%;
+        width: 100dvw;
+        padding: 1rem 0;
+        background-color: var(--soft-clr);
+        flex-direction: column;
+        transition: .3s ease-in-out;
+    }
+
+    /*-------------MASTHEAD-------------*/
+    .masthead {
+        height: auto;
+        margin: 0;
+    }
+
+    .masthead-h1 {
+        font-size: var(--fs-xlarge);
+    }
+
+
+    /*-------------STORE SECTION-------------*/
+    .shop-section {
+        height: auto;
+        margin: 0;
+    }
+
+    .product-options {
+        justify-content: center;
+    }
+
+    .product-img{
+        height: 225px;
+        width: 300px;
+    }
+
+
+
+
+
+
+}
